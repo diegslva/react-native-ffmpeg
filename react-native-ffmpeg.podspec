@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                           'ios/RNExecuteDelegate.h',
                           'ios/RNExecuteDelegate.m'
 
-    s.default_subspec   = 'https'
+    s.default_subspec   = 'full'
 
     s.dependency        'React'
 

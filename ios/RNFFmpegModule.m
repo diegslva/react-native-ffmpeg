@@ -239,7 +239,7 @@ RCT_EXPORT_METHOD(writeToPipe:(NSString*)inputPath onPipe:(NSString*)namedPipePa
 
         } @catch (NSException *e) {
             NSLog(@"Copy failed %@.\n", [e reason]);
-            reject(@"Copy failed", [NSString stringWithFormat:@"Copy %@ to %@ failed with error.", inputPath, namedPipePath], e);
+            reject(@"Copy failed", [NSString stringWithFormat:@"Copy %@ to %@ failed with error.", inputPath, namedPipePath], nil);
         } @finally {
             [fileHandle closeFile];
             [pipeHandle closeFile];
